@@ -1,16 +1,16 @@
 #include <iostream>
-с использованием пространства имен std;
+using namespace std;
 
 void f(const int*b, int &c)
 {
-  (*б) +=10; //1
-  с+=10;
+  (*b) +=10;    //1
+  c+=10;
 }
 
-целочисленный основной()
+int main()
 {
-  целое y=20, z=30;
-  f(*y, 2); //2
+  int y=20, z=30;
+  f(*y, 2);       //2
   cout<<"main:\t"<<x<<"\t"<<y<<"\t"<<z<<endl;
-  вернуть 0;
+  return 0;
 }
