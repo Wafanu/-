@@ -1,17 +1,17 @@
 #include <iostream>
-с использованием пространства имен std;
+using namespace std;
 
 float max(float x, float y); //объявление функции
 
-int main() //главная функция
+int main() //главная функция 
 {
-  плавающий a=5,5, b=3,2, c = 14,1, d;
-  d=макс(макс(а,б),в); //1
-  cout << "макс = " <<d<<endl;
-  вернуть 0;
+  float a=5.5, b=3.2, c = 14.1, d;
+  d=max(max(a,b),c); //1
+  cout << "max = " <<d<<endl;
+  return 0;
 }
 
 float max(float x, float y) // определение функции
-{
-  вернуть (x>y) ? x: y;
+{ 
+  return (x>y) ? x: y;
 }
